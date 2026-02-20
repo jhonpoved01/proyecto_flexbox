@@ -1,106 +1,130 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flexbox</title>
-  <link rel="stylesheet" href="estilos.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QuantumCode</title>
+<link rel="stylesheet" href="estilos.css">
 </head>
-
 <body>
-  <header>
-    <div class="content">
-      <div class="menu-container">
-        <label>
-          <img src="recursos/Captura de pantalla 2026-02-19 155923.png" class="menu-icono" alt="logo">
-        </label>
-          <nav class="nav-menu">
-          <ul class="nav-menu">
-            <li><a href="#">inicio</a></li>
-            <li class="dropdown">
-             <a href="#">servicios</a>
-              <ul class="submenu">
-                <li><a href="#">diseño web</a></li>
-                <li><a href="#">digital</a></li>
-                <li><a href="#">soporte</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#">sobre nosotros</a>
-          <ul class="submenu">
-            <li><a href="#">experiencias:</a></li>
-            <p>-somos un equipo de desarrollo web en busca de proyectos y mejoras</p>
-            <li><a href="#">equipo</a></li>
-            <p>eliseo amaya, saray puerto, jhon poveda
-            </p>
-          </ul>
-        </li>
-        </nav>
-      </div>
-    </div>
-  </header>
-  <section class="galeria">
-    <h2>apiraciones (galeria de imagenes)</h2>
-    <div class="imagenes">
-      <img src="recursos/Captura de pantalla 2026-02-19 191239.png" alt="Imagen 1">
-      <img src="recursos/Captura de pantalla 2026-02-19 191137.png" alt="Imagen 2">
-      <img src="recursos/Captura de pantalla 2026-02-19 191105.png" alt="Imagen 3">
-  </section>
-  <section class="seccion">
-  <h2>INGRESE SUS DATOS</h2>
-  
-  <form class="formulario">
-    <div class="fila">
-      <div class="columna">
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" placeholder="Tu nombre">
-      </div>
 
-      <div class="columna">
-        <label for="apellido">Apellido</label>
-        <input type="text" id="apellido" placeholder="Tu apellido">
-      </div>
-    </div>
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav__brand">
+    <img src="recursos/logo.png" alt="QuantumCode Logo" class="nav__logo">
+    <span class="nav__logo-text">QuantumCode</span>
+  </div>
 
-    <div class="fila">
-      <div class="columna">
-        <label for="email">Correo</label>
-        <input type="email" id="email" placeholder="Tu correo">
-      </div>
+  <ul class="nav__menu">
+    <li class="nav__item"><a href="#">Inicio</a></li>
+    <li class="nav__item"><a href="#">Proyectos</a></li>
+    <li class="nav__item"><a href="#">Servicios</a></li>
+    <li class="nav__item"><a href="#">Contacto</a></li>
+  </ul>
+</nav>
 
-      <div class="columna">
-        <label for="telefono">Teléfono</label>
-        <input type="tel" id="telefono" placeholder="Tu teléfono">
-      </div>
-    </div>
-
-    <div class="fila">
-      <div class="columna ancho-completo">
-        <label for="mensaje">Mensaje</label>
-        <textarea id="mensaje" rows="4" placeholder="Escribe tu mensaje"></textarea>
-      </div>
-    </div>
-
-    <button type="submit">compartir</button>
-  </form>
-</section>
-<section class="encabezado-seccion">
-  <div class="contenido-encabezado">
-    <span class="icono">📌</span>
-    <h2> Información personal</h2>
+<!-- GALERÍA -->
+<section class="gallery">
+  <h2 class="gallery__title">Nuestros Proyectos</h2>
+  <div class="gallery__grid">
+    <img class="gallery__img" src="recursos/Captura de pantalla 2026-02-19 155923.png">
+    <img class="gallery__img" src="recursos/Captura de pantalla 2026-02-19 191105.png">
+    <img class="gallery__img" src="recursos/Captura de pantalla 2026-02-19 191137.png">
   </div>
 </section>
-<section class="lista-tareas">
-  <h2>Lista de Tareas</h2>
-  <ul>
-    <li>hacer el trabajo</li>
-    <li>Aplicar buenos etilos</li>
-    <li>hacer todo en grupo</li>
-    <li>Publicar en git hub</li>
-  </ul>
+
+<!-- PRODUCTO -->
+<section class="product">
+  <div class="product__card">
+    <img class="product__image" src="recursos/Captura de pantalla 2026-02-19 191239.png">
+    <p>Desarrollo web moderno con tecnología avanzada.</p>
+    <button class="product__button">Ver más</button>
+  </div>
 </section>
 
-</body>
+<!-- PRICING -->
+<section class="pricing">
+  <div class="pricing__card">Básico</div>
+  <div class="pricing__card">Pro</div>
+  <div class="pricing__card">Premium</div>
+</section>
 
+<!-- FORMULARIO -->
+<section class="form-section">
+  <h2 class="form-section__title">Ingrese sus datos</h2>
+
+  <form class="form">
+    <div class="form__row">
+      <input type="text" class="form__input" placeholder="Nombre">
+      <input type="text" class="form__input" placeholder="Apellido">
+    </div>
+
+    <div class="form__row">
+      <input type="email" class="form__input" placeholder="Correo">
+      <input type="tel" class="form__input" placeholder="Teléfono">
+    </div>
+
+    <textarea class="form__textarea" placeholder="Mensaje"></textarea>
+
+    <button class="form__button">Compartir</button>
+  </form>
+</section>
+
+<!-- Testimonio -->
+<section class="testimonial">
+  <h2 class="testimonial__title">Lo que dicen nuestros clientes</h2>
+
+  <div class="testimonial__card">
+    <img class="testimonial__avatar" src="https://i.pravatar.cc/100?img=12" alt="Cliente 1">
+    <div class="testimonial__content">
+      <p class="testimonial__text">
+        QuantumCode transformó nuestra presencia digital.
+        El diseño moderno y la velocidad del desarrollo superaron nuestras expectativas.
+      </p>
+      <span class="testimonial__author">— Laura Méndez, CEO TechNova</span>
+    </div>
+  </div>
+
+  <div class="testimonial__card">
+    <img class="testimonial__avatar" src="https://i.pravatar.cc/100?img=32" alt="Cliente 2">
+    <div class="testimonial__content">
+      <p class="testimonial__text">
+        Profesionalismo, innovación y precisión.
+        Sin duda el mejor equipo de desarrollo web con el que hemos trabajado.
+      </p>
+      <span class="testimonial__author">— Andrés Rojas, Startup Founder</span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer__column">
+    <h3 class="footer__title">QuantumCode</h3>
+    <p>Pequeñas líneas. Impacto infinito.</p>
+  </div>
+
+  <div class="footer__column">
+    <h4 class="footer__subtitle">Navegación</h4>
+    <ul class="footer__list">
+      <li>Inicio</li>
+      <li>Servicios</li>
+      <li>Proyectos</li>
+      <li>Contacto</li>
+    </ul>
+  </div>
+
+  <div class="footer__column">
+    <h4 class="footer__subtitle">Contacto</h4>
+    <p>quantumcode.dev@gmail.com</p>
+    <p>+57 300 000 0000</p>
+  </div>
+</footer>
+
+<div class="footer__bottom">
+  © 2026 QuantumCode <br>
+  Developed by Saray Puerto, Elisea Amaya & Jhon Poveda
+</div>
+
+</body>
 </html>
